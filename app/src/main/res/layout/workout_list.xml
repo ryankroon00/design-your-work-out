@@ -7,18 +7,18 @@
     tools:context=".view.WorkOutListView" >
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/workoutList"
         android:layout_width="284dp"
         android:layout_height="562dp"
         android:layout_marginStart="63dp"
         android:layout_marginLeft="63dp"
         android:layout_marginTop="55dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nieuw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="63dp"
@@ -26,7 +26,7 @@
         android:layout_marginTop="33dp"
         android:text="new"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/workoutList" />
 
     <Button
         android:id="@+id/button2"
@@ -36,6 +36,6 @@
         android:layout_marginLeft="104dp"
         android:layout_marginTop="33dp"
         android:text="back"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintStart_toEndOf="@+id/nieuw"
+        app:layout_constraintTop_toBottomOf="@+id/workoutList" />
 </androidx.constraintlayout.widget.ConstraintLayout>
