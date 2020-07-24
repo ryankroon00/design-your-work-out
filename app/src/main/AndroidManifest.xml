@@ -25,7 +25,22 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".view.ExcercisesView"
+            android:name=".view.WorkoutView"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".view.CreateWorkoutView"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".view.CreateExcercise"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".view.EditExcercise"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
