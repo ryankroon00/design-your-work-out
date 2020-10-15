@@ -49,10 +49,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:text="Amount"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/excerciseNameInput" />
+        app:layout_constraintTop_toBottomOf="@+id/amountorduration" />
 
     <TextView
         android:id="@+id/amountDescripion"
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="Discription"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amoutInput" />
@@ -69,8 +69,8 @@
         android:id="@+id/amoutInput"
         android:layout_width="306dp"
         android:layout_height="53dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Amount"
@@ -82,9 +82,9 @@
         android:id="@+id/descriptionInput"
         android:layout_width="306dp"
         android:layout_height="53dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Explain  the excercise"
         android:inputType="textPersonName"
@@ -95,10 +95,80 @@
         android:id="@+id/finishCExcercise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
         android:text="FINSIH "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descriptionInput" />
+
+    <Switch
+        android:id="@+id/amountorduration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="12dp"
+        android:text="Amount or duration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/excerciseNameInput" />
+
+    <LinearLayout
+        android:id="@+id/deleteButtonContainer"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="288dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionInput"></LinearLayout>
+
+    <EditText
+        android:id="@+id/setsInput"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="how many sets"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sets" />
+
+    <TextView
+        android:id="@+id/sets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="8dp"
+        android:text="sets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionInput" />
+
+    <EditText
+        android:id="@+id/pauzeDuration"
+        android:layout_width="294dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Length of pauze"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="15dp"
+        android:text="Duration pauze after excercise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setsInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>
